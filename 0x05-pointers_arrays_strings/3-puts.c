@@ -1,16 +1,43 @@
-#include"main.h"
-#include<stdio.h>
+#include <stdio.h>
+
+#include "main.h"
+
+
+
 /**
- * main - I do not fear computers. I fear the lack of them
- * decription: using _puts function
- * str: input string
- */
+ *
+ *  *_puts - prints a string
+ *
+ *   * @str: string to print
+ *
+ *    *
+ *
+ *     * Description: prints a string
+ *
+ *      * On success: returns no error
+ *
+ *       */
+
+
+
 void _puts(char *str)
+
 {
-	int i;
-	for(i=0; str[i]!='\0'; i++);
-	{
-		_putschar(str[i]);
-	}
-	_putschar('\n');
+
+		int i = 0;
+
+
+
+			while (*(str + i) != '\0')
+
+					{
+
+								putchar(*(str + i));
+
+										i++;
+
+											}
+
+				putchar(10);
+
 }
