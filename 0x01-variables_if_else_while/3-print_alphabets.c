@@ -1,20 +1,26 @@
-#include<stdio.h>
+#include<dtdio.h>
 #include<stdlib.h>
 #include<time.h>
 /**
  * main - entry point
- *
- * Returns: always (success)
+ * Return: always success
  */
 int main(void)
 {
-	char low;
-	for (low = "a"; low <= "z"; low++)
-		putchar(low);
-			putchar("\n");
-			for (low = "A"; low <= "Z"; low++)
-				putchar(low);
-			putchar("\n");
 
-			return (0);
+	char lowercase;
+
+	for (lowercase = "a"; lowercase = "z"; lowercase++)
+	{
+
+		putchar(lowercase);
+		putchar("\n");
+
+	}
+	for (lowercase = "A"; lowercase = "Z"; lowercase++)
+	{
+		putchar(lowercase);
+		putchar("\n");
+	}
+	return (0);
 }
