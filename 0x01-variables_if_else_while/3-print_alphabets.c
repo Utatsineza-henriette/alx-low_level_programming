@@ -1,24 +1,45 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
+#include <stdlib.h>
+
+#include <stdio.h>
+
+#include <time.h>
+
+
+
 /**
- * main - entrypoint
- * Return: always success
- */
+ *
+ * * main - Letter from "a" to "z" and "z" to "a"
+ *
+ * * Return: 0 for success
+ *
+ * */
+
 int main(void)
 
 {
-	char c;
 
-	for (c = "a"; c <= "z"; c++)
-	{
-		putchar(c);
-		putchar("\n");
-	}
-	for (c = "A"; c <= "Z"; c++)
-	{
-		putchar(c);
-		putchar("\n");
-	}
-	return (0);
+		int letter;
+
+
+
+			for (letter = 'a'; letter <= 'z'; letter++)
+
+					{
+
+								putchar(letter);
+
+									}
+
+				for (letter = 'A'; letter <= 'Z'; letter++)
+
+						{
+
+									putchar(letter);
+
+										}
+
+					putchar('\n');
+
+						return (0);
+
 }

@@ -1,27 +1,61 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
+#include <stdlib.h>
+
+#include <stdio.h>
+
+#include <time.h>
+
+
+
 /**
- * main - entry point
  *
- * Returns: Always0(success)
- */
+ * * main - Greather and Less than 5 or 6, this is he last number of the "n"
+ *
+ * * Return: 0 for success
+ *
+ * */
+
 int main(void)
+
 {
-	int n;
-	int L;
-	char str[] = "Last digit of";
 
-	srand(time(0));
-		n = rand() - RAND_MAX / 2;
-		L = n % 10;
+		int n;
 
-		if(L > 5)
-			printf("%s %d is %d and is greater than 5\n", str, n, L);
-		else if(L == 0)
-			printf("%s %d is %d and is zero\n", str, n, L);
-		else if(L < 6)
-			printf("%s %d is %d and is less than 6 and not 0\n", str, n, L);
+			int last_di;
 
-		return(0);
+
+
+				srand(time(0));
+
+					n = rand() - RAND_MAX / 2;
+
+						last_di = n % 10;
+
+
+
+							if (last_di > 5)
+
+									{
+
+												printf("Last digit of %d is %d and is greater than 5\n", n, last_di);
+
+													}
+
+								else if (last_di == 0)
+
+										{
+
+													printf("Last digit of %d is %d and is 0\n", n, last_di);
+
+														}
+
+									else
+
+											{
+
+														printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last_di);
+
+															}
+
+										return (0);
+
 }
