@@ -1,25 +1,23 @@
-#include<dtdio.h>
+#include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
 /**
- * main - entry point
+ * main - entrypoint
  * Return: always success
  */
 int main(void)
+
 {
+	char c;
 
-	char lowercase;
-
-	for (lowercase = "a"; lowercase = "z"; lowercase++)
+	for (c = "a"; c <= "z"; c++)
 	{
-
-		putchar(lowercase);
+		putchar(c);
 		putchar("\n");
-
 	}
-	for (lowercase = "A"; lowercase = "Z"; lowercase++)
+	for (c = "A"; c <= "Z"; c++)
 	{
-		putchar(lowercase);
+		putchar(c);
 		putchar("\n");
 	}
 	return (0);
