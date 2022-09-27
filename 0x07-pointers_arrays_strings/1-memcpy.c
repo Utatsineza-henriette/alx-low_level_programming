@@ -1,26 +1,22 @@
-#include"main.h"
+#include "main.h"
+
+
 
 /**
  *
- *  * _memcpy - Write a function that copies memory area.
+ *  * _memcpy - copies a memory area
  *
- *   * The _memcpy() function copies n bytes from memory area src to memory area
+ *   * @dest: memory area to be copied to
  *
- *    * dest
+ *    * @src: memory area to be copied from
  *
- *     *
+ *     * @n: number of bytes to be copied
  *
- *      * @dest: This is the output string
+ *      *
  *
- *       * @src: This is my input string
+ *       * Return: pointer to the copied memory block
  *
- *        * @n: This is the number bytes to copy
- *
- *         *
- *
- *          * Return: This is the string copied
- *
- *           */
+ *        */
 
 
 
@@ -28,22 +24,20 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 {
 
-		unsigned int count;
-
-			char *pDst = dest;
-
-				char const *pSrc =  src;
+		unsigned int i = 0;
 
 
 
-					for (count = 0; count < n; count++)
+			for (; i < n; i++)
 
-							{
+					{
 
-										*pDst++ = *pSrc++;
+								dest[i] = src[i];
 
-											}
+									}
 
-						return (dest);
+
+
+				return (dest);
 
 }
